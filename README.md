@@ -1,8 +1,7 @@
 # Final-CS639
-The Final mini-capstone project for Mobile App Development that simulates healthy food planning
+<h3>The Final mini-capstone project for Mobile App Development that simulates healthy food planning: PLATE PERFECT </h3>
 
-
- 
+ <br/>
 <b><ins>The Problem:</ins></b>
 
 College students typically have a meal plan associated with their student id. With that there are either not too many healthy food items or in some cases they would choose items without regard to any nutritional benefit or the health risks. What people do not realize is that there are many harmful effects to the human body associated with poor nutrition according to the Center for Disease Control (CDC). Such risks consist of overweight and obesity, Type 2 diabetes, cancer and even the development of eating disorders like anorexia and bulimia. Additionally, 9 in 10 Americans consume wholesome amounts of sodium and sugar and nearly $173 billion is spent on nutritional healthcare. All of these are major health problems in a college student’s plate and something needs to be done in terms of helping college students navigate their meal plan options in a healthy manner
