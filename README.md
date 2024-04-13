@@ -4,7 +4,6 @@
 
 <h3> Plate Perfect </h3>
 
-
 <br/>
 Please refer to the link for more deatils <a href="https://docs.google.com/document/d/1WH4igLCGn2JayA3ci811kjBUjbGURqBT/edit?usp=sharing&ouid=102167781560686034577&rtpof=true&sd=true">Idea Proposal</a>
 
@@ -17,10 +16,10 @@ Christoper Ospina, Sharon Dsouza, Gracia Betty and Saily Jadhav
 Watch them out for their amazing work here!
 <br/>
 
-<img src="assets/Chris.jpeg" align="left" height="170px" width="170px" />
+<a href="#"><img src="assets/Chris.jpeg" align="left" height="170px" width="170px" /></a>
 
-<img src="assets/Sharon.jpeg" align="left" height="170px" width="170px" />
+<a href="#"><img src="assets/Sharon.jpeg" align="left" height="170px" width="170px" /></a>
 
-<img src="assets/Gracia.jpg" align="left" height="170px" width="170px" />
+<a href="#"><img src="assets/Gracia.jpg" align="left" height="170px" width="170px" /></a>
 
-<img src="assets/Saily.jpeg" align="left" height="170px" width="170px" />
+<a href="#"><img src="assets/Saily.jpeg" align="left" height="170px" width="170px" /></a>
