@@ -2,6 +2,8 @@
 
 <h3>The Final mini-capstone project for Mobile App Development that simulates healthy food planning: PLATE PERFECT </h3>
 
+<h3> Plate Perfect </h3>
+
  <br/>
 
 Team Members:
