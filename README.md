@@ -17,13 +17,6 @@ Why the app?
 Meal planning and nutrition management will never be the same after using the Plate perfect app. The app gives users the ability to make well-informed decisions about their health and well-being by providing a wide range of features that are customized to accommodate various dietary preferences and lifestyles. With its intuitive layout, instructional materials, and tailored support, the Plate perfect app is poised to establish itself as a reliable partner for people embarking on a healthy lifestyle.
 
 
-
-
-
-
-
-
-
 Persona 
 Name – Tori Calabrese 
 Occupation – 2nd year nursing student at Farmingdale State College
@@ -50,15 +43,11 @@ This app creates personalized meal plans based on food preferences, budget, and 
 Screenshots of Eat This Much:
  
 
- 
-
-
 2.	Lifesum Food Tracker & Fasting
 Description: Users could use a backend database to search for possible foods and recipes that he/she could potentially consume for a meal. The application also helps users in the sense of producing a well-balanced nutritious diet. Users could additionally use it for exercise routines as well.
 Screenshots: 
 
-     
- 
+    
 
 3.	AnyList
 Description: Users find this app essential for planning grocery shopping runs and for organizing recipes. Lists are shareable with roommates/partners/spouses. 
