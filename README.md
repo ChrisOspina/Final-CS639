@@ -7,18 +7,18 @@
 Team Members:
 Christoper Ospina, Saily Jadhav, Sharon Dsouza, Gracia Betty
 
-![Christoper](assets/Chris.jpeg)
+![Christoper](assets/Chris.jpeg | width=100)
 <br/>
 
-![Sharon](assets/Sharon.jpeg)
-
-<br/>
-
-![Gracia](assets/Gracia.jpg)
+![Sharon](assets/Sharon.jpeg | width=100)
 
 <br/>
 
-![Saily](assets/Saily.jpeg)
+![Gracia](assets/Gracia.jpg | width=100)
+
+<br/>
+
+![Saily](assets/Saily.jpeg | width=100)
 <br/>
 
 Please refer to the link for more deatils [Idea Prposal](https://docs.google.com/document/d/1WH4igLCGn2JayA3ci811kjBUjbGURqBT/edit?usp=sharing&ouid=102167781560686034577&rtpof=true&sd=true)
