@@ -4,23 +4,22 @@
 
 <h3> Plate Perfect </h3>
 
- <br/>
-
-Team Members:
-Christoper Ospina, Saily Jadhav, Sharon Dsouza, Gracia Betty
-
-![Christoper](assets/Chris.jpeg | width=100)
 <br/>
-
-![Sharon](assets/Sharon.jpeg | width=100)
+Please refer to the link for more deatils <a href="https://docs.google.com/document/d/1WH4igLCGn2JayA3ci811kjBUjbGURqBT/edit?usp=sharing&ouid=102167781560686034577&rtpof=true&sd=true">Idea Proposal</a>
 
 <br/>
-
-![Gracia](assets/Gracia.jpg | width=100)
-
 <br/>
 
-![Saily](assets/Saily.jpeg | width=100)
+<b><ins>Team Members:</b></ins>
+Christoper Ospina, Sharon Dsouza, Gracia Betty and Saily Jadhav
+
+Watch them out for their amazing work here!
 <br/>
 
-Please refer to the link for more deatils [Idea Prposal](https://docs.google.com/document/d/1WH4igLCGn2JayA3ci811kjBUjbGURqBT/edit?usp=sharing&ouid=102167781560686034577&rtpof=true&sd=true)
+<img src="assets/Chris.jpeg" align="left" height="200px" width="200px" />
+
+<img src="assets/Sharon.jpeg" align="left" height="200px" width="200px" />
+
+<img src="assets/Gracia.jpg" align="left" height="200px" width="200px" />
+
+<img src="assets/Saily.jpeg" align="left" height="200px" width="200px" />
