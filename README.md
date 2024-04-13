@@ -77,3 +77,5 @@ We are specifically helping college students manage their meal plans in a more e
 PlatePerfect represents a holistic approach to healthy eating and lifestyle management, empowering users to make informed choices about their nutrition and overall well-being. With its intuitive features, personalized recommendations, and user-friendly interface, PlatePerfect aims to inspire individuals to embrace a healthier and happier lifestyle. We believe that PlatePerfect has the potential to make a significant impact on the way people approach meal planning and nutrition, leading to improved health outcomes and enhanced quality of life.
 Thank you for considering our proposal. We are excited about the opportunity to develop PlatePerfect and look forward to your feedback and support.
 
+
+https://docs.google.com/document/d/1WH4igLCGn2JayA3ci811kjBUjbGURqBT/edit?usp=sharing&ouid=102167781560686034577&rtpof=true&sd=true
