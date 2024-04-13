@@ -11,7 +11,7 @@ Please refer to the link for more deatils <a href="https://docs.google.com/docum
 <br/>
 <br/>
 
-<b><ins>Team Members:</b></ins>
+<b><ins>Contributors:</b></ins>
 Christoper Ospina, Sharon Dsouza, Gracia Betty and Saily Jadhav
 
 Watch them out for their amazing work here!
