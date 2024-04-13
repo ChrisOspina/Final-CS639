@@ -17,10 +17,10 @@ Christoper Ospina, Sharon Dsouza, Gracia Betty and Saily Jadhav
 Watch them out for their amazing work here!
 <br/>
 
-<img src="assets/Chris.jpeg" align="left" height="100px" width="100px" />
+<img src="assets/Chris.jpeg" align="left" height="170px" width="170px" />
 
-<img src="assets/Sharon.jpeg" align="left" height="100px" width="100px" />
+<img src="assets/Sharon.jpeg" align="left" height="170px" width="170px" />
 
-<img src="assets/Gracia.jpg" align="left" height="100px" width="100px" />
+<img src="assets/Gracia.jpg" align="left" height="170px" width="170px" />
 
-<img src="assets/Saily.jpeg" align="left" height="100px" width="100px" />
+<img src="assets/Saily.jpeg" align="left" height="170px" width="170px" />
