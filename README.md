@@ -7,6 +7,9 @@ An android app designed to give users the ability to make well-informed decision
 <h2>Idea Proposal</h2>
 Please refer to the link for more details <a href="https://docs.google.com/document/d/1WH4igLCGn2JayA3ci811kjBUjbGURqBT/edit?usp=sharing&ouid=102167781560686034577&rtpof=true&sd=true">Idea Proposal</a>
 
+<h2>Design</h2>
+Please refer to the link for more details <a href="https://www.figma.com/file/WaHtcOq8zx3GQMmXaezbxi/Plate-Perfect-Design?type=whiteboard&node-id=0-1&t=BbGVux2QRRN0fjTZ-0">Design</a>
+
 <br/>
 
 <h2>Contributors:</h2>
