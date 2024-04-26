@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">PlatePerf</string>
+    <string name="app_name">PlatePerfect</string>
+    <string name="passwords_do_not_match">Passwords do not match.</string>
+    <string name="empty_fields_text">Empty Fields are not allowed.</string>
+    <string name="password_short_text">Password length is too short.</string>
+    <string name="sign_out_button_clicked">Sign Out button clicked.</string>
+    <string name="sign_out_button_display">Sign Out</string>
+    <string name="placeholder_display">Welcome to Plate Perfect!</string>
+    <string name="placeholder_email">Enter your email</string>
+    <string name="placeholder_password">Enter your password</string>
+    <string name="sign_in_button_display">Sign In</string>
+    <string name="sign_up_display">Not registered yet? Sign Up here!</string>
+    <string name="placeholder_confirm_password">Confirm your password</string>
+    <string name="sign_up_button_display">Sign Up</string>
+    <string name="sign_in_display">Already registered? Sign In here!</string>
 </resources>
