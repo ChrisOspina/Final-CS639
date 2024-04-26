@@ -40,7 +40,7 @@ class SignInActivity: AppCompatActivity() {
                     }
                 }
             } else {
-                Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.empty_fields_text), Toast.LENGTH_SHORT).show()
 
             }
         }

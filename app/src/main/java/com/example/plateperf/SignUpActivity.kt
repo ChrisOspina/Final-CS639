@@ -37,14 +37,16 @@ class SignUpActivity: AppCompatActivity() {
                             val intent = Intent(this, SignInActivity::class.java)
                             startActivity(intent)
                         } else {
-                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this,
+                                getString(R.string.password_short_text), Toast.LENGTH_SHORT).show()
                         }
                     }
                 } else {
-                    Toast.makeText(this, "Password is not matching", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,
+                        getString(R.string.passwords_do_not_match), Toast.LENGTH_SHORT).show()
                 }
             } else {
-                Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.empty_fields_text), Toast.LENGTH_SHORT).show()
 
             }
         }
