@@ -13,7 +13,7 @@ Please refer to the link for more details <a href="https://www.figma.com/file/Wa
 <br/>
 
 <h2>Contributors:</h2>
-Christoper Ospina, Sharon Dsouza, Gracia Betty and Saily Jadhav
+Christoper Ospina, Sharon Dsouza, Gracia Betty Jebaraj Daniel and Saily Jadhav
 <br/>
 
 <a href="#"><img src="assets/Chris.jpeg" align="left" height="170px" width="170px" /></a>
