@@ -33,7 +33,7 @@
 <!--    Contact Us -->
     <string name="contact_us_details">Contact Us</string>
     <string name="placeholder_name">Enter your name</string>
-    <string name="submit_button_display">Submit</string>
+    <string name="send_button_display">Send</string>
     <string name="placeholder_message">Message</string>
 
     <!--    Dashboard  -->
