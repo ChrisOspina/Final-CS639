@@ -15,18 +15,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/dashboardSignOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/yellow"
+            android:text="@string/sign_out_button_display"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints" />
     </FrameLayout>
-
-    <Button
-        android:id="@+id/dashboardSignOutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sign_out_button_display"
-        android:backgroundTint="@color/yellow"
-        android:textColor="@color/black"
-        android:layout_gravity="end"
-        android:layout_margin="16dp"
-        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
