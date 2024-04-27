@@ -9,8 +9,112 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/placeholder_profile"
+
         android:textSize="26dp"
         android:layout_gravity="center" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"  android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/age_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/height_cm"  android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/height_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/weight_kg"  android:textStyle="bold"/>
+
+        <EditText
+        android:id="@+id/weight_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textStyle="bold" />
+
+
+        <EditText
+         android:id="@+id/email_field"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:inputType="textEmailAddress" />
+
+        <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/phone_number"
+         android:textStyle="bold" />
+
+
+        <EditText
+        android:id="@+id/phone_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" />
+
+        <Button
+        android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        android:text="@string/update_profile" />
+
+
+
+ </LinearLayout>
+
+
+
+ </FrameLayout>

@@ -35,4 +35,19 @@
     <string name="placeholder_name">Enter your name</string>
     <string name="submit_button_display">Submit</string>
     <string name="placeholder_message">Message</string>
+
+    <!--    Dashboard  -->
+
+    <string name="meal_plan_and_recipes">Meal Plan and Recipes</string>
+    <string name="meal_time_notification">Meal Time Notification</string>
+
+    <!--    Profile  -->
+    <string name="name">Name:</string>
+    <string name="age">Age:</string>
+    <string name="height_cm">Height (cm):</string>
+    <string name="weight_kg">Weight (kg):</string>
+    <string name="email">Email:</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="update_profile">Update Profile</string>
+
 </resources>
