@@ -4,57 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+    android:background="@drawable/background2"
     android:paddingLeft="20dp"
     android:paddingTop="10dp"
     android:paddingRight="10dp"
     android:paddingBottom="10dp">
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextName"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="50dp"-->
-    <!--        android:hint="@string/placeholder_name"-->
-    <!--        android:inputType="textPersonName"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        android:layout_marginTop="16dp"/>-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextEmail"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="50dp"-->
-    <!--        android:hint="@string/placeholder_email"-->
-    <!--        android:inputType="textEmailAddress"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextName"-->
-    <!--        android:layout_marginTop="16dp"/>-->
-
-    <!--    <EditText-->
-    <!--        android:id="@+id/editTextMessage"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="50dp"-->
-    <!--        android:hint="@string/placeholder_message"-->
-    <!--        android:inputType="textMultiLine"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"-->
-    <!--        android:layout_marginTop="16dp"/>-->
-
-    <!--    <Button-->
-    <!--        android:id="@+id/buttonSubmit"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="@string/submit_button_display"-->
-    <!--        android:textColor="@color/black"-->
-    <!--        android:backgroundTint="@color/yellow"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextMessage"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        android:layout_marginTop="16dp"/>-->
-
 
     <TextView
         android:id="@+id/textView2"
@@ -79,6 +33,7 @@
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
+        android:drawableTint="@color/black"
         android:ems="10"
         android:hint="@string/placeholder_email"
         android:inputType="text"
@@ -86,8 +41,8 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/colorWhite"
-        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,6 +56,7 @@
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
+        android:drawableTint="@color/black"
         android:ems="10"
         android:hint="@string/placeholder_name"
         android:inputType="text"
@@ -108,8 +64,8 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/colorWhite"
-        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,8 +85,8 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/colorWhite"
-        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
