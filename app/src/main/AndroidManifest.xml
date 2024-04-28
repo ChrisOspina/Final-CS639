@@ -33,6 +33,13 @@
         <activity
             android:name=".DashboardActivity"
             android:exported="false" />
+        <activity
+            android:name=".MealActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".NotificationActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

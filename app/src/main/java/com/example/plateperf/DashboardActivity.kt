@@ -26,7 +26,8 @@ class DashboardActivity : AppCompatActivity() {
 
         binding.dashboardSignOutButton.setOnClickListener {
             Log.d("dashboardActivity", "Sign out button clicked") // Log message
-            Toast.makeText(this, getString(R.string.sign_out_button_clicked), Toast.LENGTH_SHORT).show() // Toast message
+            Toast.makeText(this, getString(R.string.sign_out_button_clicked), Toast.LENGTH_SHORT)
+                .show() // Toast message
             firebaseAuth.signOut()
             // Redirect to the sign-in activity after signing out
             val intent = Intent(this, SignInActivity::class.java)
