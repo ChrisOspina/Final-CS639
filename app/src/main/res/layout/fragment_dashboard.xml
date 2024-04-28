@@ -32,7 +32,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/mealplan" />
+                    android:src="@drawable/mealplan"
+                    android:id="@+id/mealRecipies"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -65,7 +66,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/img" />
+                    android:src="@drawable/img"
+                    android:id="@+id/mealTimeNotificationCardView"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -74,7 +76,8 @@
                     android:text="@string/meal_time_notification"
                     android:textSize="30sp"
                     android:textColor="@color/black"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:id="@+id/notify"/>
 
             </LinearLayout>
 
@@ -83,7 +86,6 @@
     </LinearLayout>
 
     </ScrollView>
-
 
 
 

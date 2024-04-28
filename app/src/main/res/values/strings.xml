@@ -50,4 +50,7 @@
     <string name="phone_number">Phone Number:</string>
     <string name="update_profile">Update Profile</string>
 
+    <!-- Meal Plan Screen -->
+    <string name="back">Back</string>
+
 </resources>

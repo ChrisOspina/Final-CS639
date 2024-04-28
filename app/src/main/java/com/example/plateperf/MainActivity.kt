@@ -6,7 +6,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.example.plateperf.databinding.ActivityMainBinding
-import com.example.plateperf.databinding.ActivitySignInBinding
+
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : ComponentActivity() {
