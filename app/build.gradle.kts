@@ -72,6 +72,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation("com.squareup.picasso:picasso:2.8")
     implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
+    implementation("com.airbnb.android:lottie:4.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

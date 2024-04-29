@@ -2,11 +2,14 @@ package com.example.plateperf
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.airbnb.lottie.LottieAnimationView
 import com.example.plateperf.interfaces.AppService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -21,10 +24,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class MealActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
-    private lateinit var newArrayList: ArrayList<recipie>
-    lateinit var imagId: Array<Int>
-    lateinit var heading: Array<String>
     private lateinit var backButton: Button
+    private lateinit var loaderAnimationView: LottieAnimationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,12 +33,15 @@ class MealActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recyclerView)
         backButton = findViewById(R.id.backBtn)
-
+        loaderAnimationView = findViewById(R.id.loaderAnimationView)
 
 
         backButton.setOnClickListener {
             onBackPressed()
         }
+
+        loaderAnimationView.visibility = View.VISIBLE
+        loaderAnimationView.playAnimation()
 
         // Initialize Retrofit
         val retrofit = Retrofit.Builder()
@@ -54,6 +58,7 @@ class MealActivity : AppCompatActivity() {
 
         call.enqueue(object : retrofit2.Callback<recipie> {
             override fun onResponse(call: Call<recipie>, response: retrofit2.Response<recipie>) {
+                loaderAnimationView.visibility = View.GONE
                 if (response.isSuccessful) {
                     val recipeResponse = response.body()
                     if (recipeResponse != null) {
@@ -62,7 +67,6 @@ class MealActivity : AppCompatActivity() {
                         val adapter = MealAdapter(meals)
                         recyclerView.adapter = adapter
                         Log.d("API Response", meals.toString())
-                        // Update UI with the list of meals (see next step)
                     } else {
                         // Handle empty response
                         Log.d("API Response", "No recipes received")
