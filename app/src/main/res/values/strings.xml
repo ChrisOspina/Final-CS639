@@ -53,5 +53,6 @@
 
     <!-- Meal Plan Screen -->
     <string name="back">Back</string>
+    <string name="meal_title">Meal_Title</string>
 
 </resources>

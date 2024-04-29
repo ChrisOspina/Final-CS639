@@ -3,22 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
-    <ImageView
-        android:id="@+id/mealImage"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/placeholder_image" />
-
     <TextView
         android:id="@+id/mealTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Meal Title"
+        android:text="@string/meal_title"
         android:textSize="18sp"
+        android:textStyle="bold"
         android:textColor="@android:color/black"
         android:padding="8dp"/>
+
+
+    <ImageView
+        android:id="@+id/mealImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image" />
 
 </LinearLayout>
