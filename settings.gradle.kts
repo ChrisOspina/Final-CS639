@@ -13,5 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PlatePerfect"
+rootProject.name = "PlatePerf"
 include(":app")
+ 

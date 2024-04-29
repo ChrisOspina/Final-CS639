@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--profile text fields-->
+    <item name="name_field" type="id" />
+    <item name="age_field" type="id" />
+    <item name="birthday_field" type="id" />
+    <item name="height_field" type="id" />
+    <item name = "weight_field" type="id"/>
+    <item name = "email_field" type="id"/>
+    <item name = "phone_field" type="id"/>
+    <!--update button-->
+    <item name ="update_button" type ="id"/>
+
+</resources>

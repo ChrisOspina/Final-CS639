@@ -1,4 +1,4 @@
-package com.example.plateperfect
+package com.example.plateperf
 
 import org.junit.Test
 

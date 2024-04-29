@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "469428229741",
+    "project_id": "plateperfect-2595c",
+    "storage_bucket": "plateperfect-2595c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469428229741:android:cdce950e6023d757f79164",
+        "android_client_info": {
+          "package_name": "com.example.plateperf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOqFuIj5Mdb_B08e7PS5oR9OL_x1ZjagQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
