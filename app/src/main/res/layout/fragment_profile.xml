@@ -169,8 +169,6 @@
             android:backgroundTint="@color/yellow"
             android:text="@string/update_profile"
             android:textColor="@color/black" />
-
-
     </LinearLayout>
 
 
