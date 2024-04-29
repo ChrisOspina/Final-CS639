@@ -28,7 +28,7 @@
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/profile" />
-
+<!--Name-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp" />
-
+<!--Age-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,7 +66,26 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp" />
+<!--birthday-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
+        <EditText
+            android:id="@+id/birthday_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+
+        <!--Height-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,6 +105,7 @@
             android:paddingRight="10dp"
             android:paddingBottom="10dp" />
 
+        <!--Weight-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +123,7 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp" />
-
+<!--Email-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -122,7 +142,7 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp" />
-
+<!--Phone-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -141,7 +161,7 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp" />
-
+<!--update-->
         <Button
             android:id="@+id/update_button"
             android:layout_width="match_parent"
