@@ -38,8 +38,9 @@
 
     <!--    Dashboard  -->
 
-    <string name="meal_plan_and_recipes">Meal Plan and Recipes</string>
+    <string name="meal_plan_and_recipes">Meals and Nutrients</string>
     <string name="meal_time_notification">Meal Time Notification</string>
+    <string name="meal_planner">Meal Planner</string>
 
     <!--    Profile  -->
     <string name="name">Name:</string>

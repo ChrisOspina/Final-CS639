@@ -64,6 +64,7 @@ class MealActivity : AppCompatActivity() {
                     if (recipeResponse != null) {
                         // Handle successful response
                         val meals = recipeResponse.results
+                        Log.d("MealActivity", "Meals: $meals")
                         val adapter = MealAdapter(meals)
                         recyclerView.adapter = adapter
                         Log.d("API Response", meals.toString())
