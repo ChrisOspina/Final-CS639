@@ -1,3 +1,4 @@
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,9 +10,9 @@ import com.example.plateperf.R
 class MealPlannerAdapter(private var days: MutableList<Day>) : RecyclerView.Adapter<MealPlannerAdapter.MealViewHolder>() {
 
     inner class MealViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val titleTextView: TextView = itemView.findViewById(R.id.titleMealPlannerTextView)
+        val dayTextView: TextView = itemView.findViewById(R.id.dayTextView)
+        val mealTextView: TextView = itemView.findViewById(R.id.mealTextView)
         val readyInMinutesTextView: TextView = itemView.findViewById(R.id.readyInMinutesTextView)
-        val sourceUrlTextView: TextView = itemView.findViewById(R.id.sourceUrlTextView)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MealViewHolder {
@@ -22,9 +23,30 @@ class MealPlannerAdapter(private var days: MutableList<Day>) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: MealViewHolder, position: Int) {
         val day = days[position]
-        holder.titleTextView.text = day.meals.joinToString("\n") { it.title }
-        holder.readyInMinutesTextView.text = day.meals.joinToString("\n") { it.readyInMinutes.toString() }
-        holder.sourceUrlTextView.text = day.meals.joinToString("\n") { it.sourceUrl }
+//        Log.d("MealPlannerAdapter", "Day: $day")
+//        holder.dayTextView.text = "Mo" // Assuming there is a name property in Day
+//        holder.mealTextView.text = day.meals.joinToString("\n") { it.title }
+//        holder.readyInMinutesTextView.text = day.meals.joinToString("\n") { it.readyInMinutes.toString() }
+
+        // Set the day name
+        holder.dayTextView.text = when (position) {
+            0 -> "Monday"
+            1 -> "Tuesday"
+            2 -> "Wednesday"
+            3 -> "Thursday"
+            4 -> "Friday"
+            5 -> "Saturday"
+            6 -> "Sunday"
+            else -> "Unknown"
+        }
+
+        // Join the titles of all meals for the day and set it to the mealTextView
+        val mealTitles = day.meals.joinToString("\n") { it.title }
+        holder.mealTextView.text = mealTitles
+
+        // Join the ready in minutes of all meals for the day and set it to the readyInMinutesTextView
+        val readyInMinutes = day.meals.joinToString("\n") { it.readyInMinutes.toString() }
+        holder.readyInMinutesTextView.text = readyInMinutes
     }
 
     override fun getItemCount(): Int = days.size
