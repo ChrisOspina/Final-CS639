@@ -1,9 +1,12 @@
 package com.example.plateperf
 
+import MealPlannerAdapter
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.plateperf.interfaces.AppService
 import retrofit2.Call
 import retrofit2.Callback
@@ -12,6 +15,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class MealPlannerActivity  : AppCompatActivity(){
+
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: MealPlannerAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meal_planner)
@@ -20,6 +26,11 @@ class MealPlannerActivity  : AppCompatActivity(){
         backButton.setOnClickListener {
             onBackPressed()
         }
+
+        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        adapter = MealPlannerAdapter(emptyList())
+        recyclerView.adapter = adapter
 
         // Call the function to fetch meal plan data
         fetchMealPlan()
@@ -46,14 +57,19 @@ class MealPlannerActivity  : AppCompatActivity(){
                     if (mealPlanResponse != null) {
                         // Process the meal plan response here
                         val week = mealPlanResponse.week
-                        // Access Monday meals
-                        val mondayMeals = week.monday.meals
-                        // Log meals
-                        for (meal in mondayMeals) {
-                            Log.d("MealPlanner", "Meal Title: ${meal.title}")
-                            Log.d("MealPlanner", "Meal Source URL: ${meal.sourceUrl}")
-                            // Log other meal properties as needed
-                        }
+
+                        // Create a list of all meals
+                        val allMeals = mutableListOf<Meal>()
+                        allMeals.addAll(week.monday.meals)
+                        allMeals.addAll(week.tuesday.meals)
+                        allMeals.addAll(week.wednesday.meals)
+                        allMeals.addAll(week.thursday.meals)
+                        allMeals.addAll(week.friday.meals)
+                        allMeals.addAll(week.saturday.meals)
+                        allMeals.addAll(week.sunday.meals)
+
+                        // Update adapter with the list of meals
+                        adapter.updateMeals(allMeals)
                     } else {
                         Log.e("MealPlanner", "Meal plan response is null")
                     }
