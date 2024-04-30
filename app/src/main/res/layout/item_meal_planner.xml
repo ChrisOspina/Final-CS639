@@ -2,28 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="16dp">
 
+    <!-- Day TextView -->
     <TextView
-        android:id="@+id/titleMealPlannerTextView"
-        android:layout_width="match_parent"
+        android:id="@+id/dayTextView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"/>
 
+    <!-- Meal TextView -->
+    <TextView
+        android:id="@+id/mealTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Ready In Minutes TextView -->
     <TextView
         android:id="@+id/readyInMinutesTextView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="@android:color/darker_gray"/>
-
-    <TextView
-        android:id="@+id/sourceUrlTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:autoLink="web"/>
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:padding="8dp"/>
 
 </LinearLayout>
