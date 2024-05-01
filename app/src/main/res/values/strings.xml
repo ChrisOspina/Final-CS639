@@ -44,7 +44,7 @@
     <!--    Profile  -->
     <string name="name">Name:</string>
     <string name="age">Age:</string>
-    <string name="birthday">Birthday</string>
+    <string name="birthday">Birthday:</string>
     <string name="height_cm">Height (cm):</string>
     <string name="weight_kg">Weight (kg):</string>
     <string name="email">Email:</string>
