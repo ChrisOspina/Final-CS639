@@ -11,13 +11,12 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.widget.Button
 import android.provider.Settings
 import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationManagerCompat
-import androidx.core.content.ContextCompat
 import com.example.plateperf.databinding.ActivityNotificationBinding
 import java.util.Calendar
 import java.util.Date
@@ -31,6 +30,10 @@ class NotificationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityNotificationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val backButton: Button = findViewById(R.id.backBtn)
+        backButton.setOnClickListener {
+            onBackPressed()
+        }
 
         createNotificationChannel()
 
@@ -46,7 +49,7 @@ class NotificationActivity : AppCompatActivity() {
 
     @SuppressLint("ScheduleExactAlarm")
     private fun scheduleNotification() {
-        // Create an intent for the Notification BroadcastReceiver
+        // Create an intent for the com.example.plateperf.Notification BroadcastReceiver
         val intent = Intent(applicationContext, Notification::class.java)
 
         // Extract title and message from user input
@@ -90,7 +93,7 @@ class NotificationActivity : AppCompatActivity() {
 
         // Create and show an alert dialog with notification details
         AlertDialog.Builder(this)
-            .setTitle("Notification Scheduled")
+            .setTitle("com.example.plateperf.Notification Scheduled")
             .setMessage(
                 "Title: $title\nMessage: $message\nAt: ${dateFormat.format(date)} ${timeFormat.format(date)}"
             )
