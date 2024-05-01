@@ -56,4 +56,9 @@
     <string name="back">Back</string>
     <string name="meal_title">Meal_Title</string>
 
+<!--    Notification Screen -->
+    <string name="notification_title">Title</string>
+    <string name="notification_message">Message</string>
+    <string name="schedule_notification_button_display">Schedule Notification</string>
+
 </resources>
