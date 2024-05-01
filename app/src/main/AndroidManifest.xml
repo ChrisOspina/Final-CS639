@@ -37,6 +37,9 @@
             android:name=".MealActivity"
             android:exported="true">
         </activity>
+        <activity android:name=".MealPlannerActivity"
+            android:exported="true">
+        </activity>
         <activity android:name=".NotificationActivity"
             android:exported="true">
         </activity>

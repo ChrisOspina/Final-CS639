@@ -37,10 +37,18 @@ class Dashboard : Fragment() {
 
         val notifyCardView = binding.mealTimeNotificationCardView
 
+        val mealPlannerView = binding.mealPlanner
+
         // Set an OnClickListener for the Card
         mealRecipeCardView.setOnClickListener {
             Toast.makeText(requireContext(), "Meal Recipie card clicked", Toast.LENGTH_SHORT).show()
             val intent = Intent(requireContext(), MealActivity::class.java)
+            startActivity(intent)
+        }
+
+        mealPlannerView.setOnClickListener {
+            Toast.makeText(requireContext(), "Meal Planner card clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireContext(), MealPlannerActivity::class.java)
             startActivity(intent)
         }
 
