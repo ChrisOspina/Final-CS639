@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_light_alt"
+        android:background="@drawable/background_light_alt2"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -161,7 +161,7 @@
             android:backgroundTint="@color/yellow"
             android:text="@string/update_profile"
             android:textColor="@color/black" />
-        
+
         </LinearLayout>
 
     </ScrollView>
