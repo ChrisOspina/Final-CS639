@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
+<!--    text color and nav bar highlights - yellow-->
     <color name="purple_500">#FFC801</color>
+<!-- Cursor color black   -->
     <color name="purple_700">#FF000000</color>
     <color name="teal_200">#FF000000</color>
     <color name="teal_700">#FF018786</color>

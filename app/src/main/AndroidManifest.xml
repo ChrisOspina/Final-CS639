@@ -49,6 +49,9 @@
         <activity android:name=".NotificationActivity"
             android:exported="true">
         </activity>
+        <activity android:name=".ContactUsActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
