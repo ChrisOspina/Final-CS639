@@ -49,7 +49,7 @@ class NotificationActivity : AppCompatActivity() {
 
     @SuppressLint("ScheduleExactAlarm")
     private fun scheduleNotification() {
-        // Create an intent for the com.example.plateperf.Notification BroadcastReceiver
+        // Notification BroadcastReceiver
         val intent = Intent(applicationContext, Notification::class.java)
 
         // Extract title and message from user input
@@ -60,7 +60,7 @@ class NotificationActivity : AppCompatActivity() {
         intent.putExtra(titleExtra, title)
         intent.putExtra(messageExtra, message)
 
-        // Create a PendingIntent for the broadcast
+        // PendingIntent for the broadcast
         val pendingIntent = PendingIntent.getBroadcast(
             applicationContext,
             notificationID,
@@ -68,7 +68,6 @@ class NotificationActivity : AppCompatActivity() {
             PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
         )
 
-        // Get the AlarmManager service
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
         // Get the selected time and schedule the notification
@@ -79,21 +78,17 @@ class NotificationActivity : AppCompatActivity() {
             pendingIntent
         )
 
-        // Show an alert dialog with information
-        // about the scheduled notification
+        // Alert dialog with information
         showAlert(time, title, message)
     }
 
     private fun showAlert(time: Long, title: String, message: String) {
-        // Format the time for display
         val date = Date(time)
         val dateFormat = android.text.format.DateFormat.getLongDateFormat(applicationContext)
         val timeFormat = android.text.format.DateFormat.getTimeFormat(applicationContext)
-        Log.e("Dialog", "building dialog")
 
-        // Create and show an alert dialog with notification details
         AlertDialog.Builder(this)
-            .setTitle("com.example.plateperf.Notification Scheduled")
+            .setTitle("Notification Scheduled")
             .setMessage(
                 "Title: $title\nMessage: $message\nAt: ${dateFormat.format(date)} ${timeFormat.format(date)}"
             )
@@ -102,14 +97,12 @@ class NotificationActivity : AppCompatActivity() {
     }
 
     private fun getTime(): Long {
-        // Get selected time from TimePicker and DatePicker
         val minute = binding.timePicker.minute
         val hour = binding.timePicker.hour
         val day = binding.datePicker.dayOfMonth
         val month = binding.datePicker.month
         val year = binding.datePicker.year
 
-        // Create a Calendar instance and set the selected date and time
         val calendar = Calendar.getInstance()
         calendar.set(year, month, day, hour, minute)
 
