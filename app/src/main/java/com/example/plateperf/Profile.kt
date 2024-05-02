@@ -23,6 +23,8 @@ class Profile : Fragment() {
     private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
 
+
+
     
     // TODO: Rename and change types of parameters
     private var param1: String? = null
