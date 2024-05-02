@@ -12,7 +12,7 @@
     <!-- Title -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/background_light_alt2"
         android:orientation="vertical"
         android:padding="16dp">
@@ -21,143 +21,148 @@
         <ImageView
             android:id="@+id/profile_image"
             android:layout_width="65dp"
-            android:layout_height="39dp"
+            android:layout_height="61dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/profile" />
 
         <!-- Name -->
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/name"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/name_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/input_bg"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            android:textStyle="bold"
+            android:hint="@string/name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Age -->
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/age"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/age_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/input_bg"
-            android:inputType="number"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            android:textStyle="bold"
+            android:hint="@string/age" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Birthday -->
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/birthday"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/birthday_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/input_bg"
+            android:hint="@string/birthday"
             android:inputType="number"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Height -->
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/height_cm"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
-        <EditText
-            android:id="@+id/height_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_bg"
-            android:inputType="number"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/height_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/height_cm"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Weight -->
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/weight_kg"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
-        <EditText
-            android:id="@+id/weight_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_bg"
-            android:inputType="number"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/weight_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/weight_lb"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Email -->
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/email"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
-        <EditText
-            android:id="@+id/email_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_bg"
-            android:inputType="textEmailAddress"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Phone -->
-        <TextView
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/phone_number"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
 
-        <EditText
-            android:id="@+id/phone_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_bg"
-            android:inputType="phone"
-            android:padding="10dp"
-            android:layout_marginBottom="16dp"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Update Button -->
         <Button
             android:id="@+id/update_button"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
             android:backgroundTint="@color/yellow"
             android:text="@string/update_profile"
             android:textColor="@color/black" />
