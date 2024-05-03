@@ -1,8 +1,8 @@
 <resources>
-<!--    App name  -->
+    <!--    App name  -->
     <string name="app_name">PlatePerfect</string>
 
-<!--    Sign In -->
+    <!--    Sign In -->
     <string name="passwords_do_not_match">Passwords do not match.</string>
     <string name="empty_fields_text">Empty Fields are not allowed.</string>
     <string name="password_short_text">Password length is too short.</string>
@@ -12,25 +12,25 @@
     <string name="sign_up_display">Not registered yet? Sign Up here!</string>
     <string name="placeholder_confirm_password">Confirm your password</string>
 
-<!--    Sign Out -->
+    <!--    Sign Out -->
     <string name="sign_out_button_clicked">Sign Out button clicked.</string>
     <string name="sign_out_button_display">Sign Out</string>
     <string name="placeholder_display">Welcome to Plate Perfect!</string>
 
-<!--    SIgn Up -->
+    <!--    SIgn Up -->
     <string name="sign_up_button_display">Sign Up</string>
     <string name="sign_in_display">Already registered? Sign In here!</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--    Nav Bar -->
+    <!--    Nav Bar -->
     <string name="placeholder_main_dashboard">Main dashboard</string>
     <string name="placeholder_profile">Profile</string>
     <string name="home_nav_display">Home</string>
     <string name="profile_nav_display">Profile</string>
     <string name="contact_us_nav_display">Contact Us</string>
 
-<!--    Contact Us -->
+    <!--    Contact Us -->
     <string name="contact_us_details">Contact Us</string>
     <string name="placeholder_name">Enter your name</string>
     <string name="send_button_display">Send</string>
@@ -51,14 +51,23 @@
     <string name="email">Email</string>
     <string name="phone_number">Phone Number</string>
     <string name="update_profile">Update Profile</string>
+    <string name="save_profile">Save Profile</string>
 
     <!-- Meal Plan Screen -->
     <string name="back">Back</string>
     <string name="meal_title">Meal_Title</string>
 
-<!--    Notification Screen -->
+    <!--    Notification Screen -->
     <string name="notification_title">Title</string>
     <string name="notification_message">Message</string>
     <string name="schedule_notification_button_display">Schedule Notification</string>
+    <string name="name_placeholder">John Doe</string>
+    <string name="age_placeholder">25</string>
+    <string name="birthday_placeholder">05/28/1999</string>
+    <string name="height_placeholder">130 cm</string>
+    <string name="weight_placeholder">150 lb</string>
+    <string name="email_placeholder">johndoe@gmail.com</string>
+    <string name="phone_number_placeholder">555-555-5555</string>
+    <string name="profile_details">Profile Details</string>
 
 </resources>

@@ -156,15 +156,15 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Update Button -->
+        <!-- Save Button -->
         <Button
-            android:id="@+id/update_button"
+            android:id="@+id/save_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/yellow"
-            android:text="@string/update_profile"
+            android:text="@string/save_profile"
             android:textColor="@color/black" />
 
         </LinearLayout>
