@@ -40,7 +40,7 @@ class DashboardActivity : AppCompatActivity() {
             when(it.itemId){
 
                 R.id.home -> replaceFragment(Dashboard())
-                R.id.profile -> replaceFragment(Profile())
+                R.id.profile -> replaceFragment(ProfileDisplay())
                 R.id.contactus -> replaceFragment(ContactUs())
 
                 else ->{

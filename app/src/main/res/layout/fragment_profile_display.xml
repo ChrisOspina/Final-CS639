@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/display_nav"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_light_alt2"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Profile Image -->
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="89dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_details"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_placeholder"
+                android:textColor="@color/black"
+
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+
+            <!-- Age -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/age_placeholder"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+
+            <!-- Birthday -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/birthday_placeholder"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Height -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/height_placeholder"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Weight -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weight_placeholder"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email_placeholder"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Phone -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number_placeholder"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/yellow"
+                android:text="@string/update_profile"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
