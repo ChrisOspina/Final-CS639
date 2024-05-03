@@ -5,28 +5,32 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.airbnb.lottie.LottieAnimationView
-import com.example.plateperf.interfaces.AppService
-import layout.MealAdapter
+import com.google.android.gms.common.api.Response
 import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-
 class MealActivity : AppCompatActivity() {
-    private lateinit var recyclerView: RecyclerView
+    private lateinit var recyclerViewBreakfast: RecyclerView
+    private lateinit var recyclerViewLunch: RecyclerView
+    private lateinit var recyclerViewDinner: RecyclerView
     private lateinit var backButton: Button
     private lateinit var loaderAnimationView: LottieAnimationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_meal)
+        setContentView(R.layout.activity_recipe_page)
 
-        recyclerView = findViewById(R.id.recyclerView)
+        recyclerViewBreakfast = findViewById(R.id.recyclerViewBreakfast)
+        recyclerViewLunch = findViewById(R.id.recyclerViewLunch)
+        recyclerViewDinner = findViewById(R.id.recyclerViewDinner)
         backButton = findViewById(R.id.backBtn)
         loaderAnimationView = findViewById(R.id.loaderAnimationView)
-
 
         backButton.setOnClickListener {
             onBackPressed()
@@ -35,45 +39,62 @@ class MealActivity : AppCompatActivity() {
         loaderAnimationView.visibility = View.VISIBLE
         loaderAnimationView.playAnimation()
 
-        // Initialize Retrofit
+        val apiKey = "1b2c5dfeedce452ea254ea6b66ba41dd"
         val retrofit = Retrofit.Builder()
             .baseUrl("https://api.spoonacular.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        // Create service instance
-        val service = retrofit.create(AppService::class.java)
+        val service = retrofit.create(RecipeService::class.java)
 
-        // Make API call and enqueue it to execute asynchronously
-        val call = service.getRecipes("1b2c5dfeedce452ea254ea6b66ba41dd")
-
-
-        call.enqueue(object : retrofit2.Callback<recipie> {
-            override fun onResponse(call: Call<recipie>, response: retrofit2.Response<recipie>) {
-                loaderAnimationView.visibility = View.GONE
-                if (response.isSuccessful) {
-                    val recipeResponse = response.body()
-                    if (recipeResponse != null) {
-                        // Handle successful response
-                        val meals = recipeResponse.results
-                        Log.d("MealActivity", "Meals: $meals")
-                        val adapter = MealAdapter(meals)
-                        recyclerView.adapter = adapter
-                        Log.d("API Response", meals.toString())
-                    } else {
-                        // Handle empty response
-                        Log.d("API Response", "No recipes received")
-                    }
-                } else {
-                    // Handle API request failure
-                    Log.d("API Response", "Failed to fetch recipes: ${response.code()}")
-                }
+        // Make API call for each meal type
+        service.getRecipes("breakfast").enqueue(object : Callback<List<Recipe>> {
+            override fun onResponse(call: Call<List<Recipe>>, response: Response<List<Recipe>>) {
+                handleResponse(response, recyclerViewBreakfast)
             }
 
-            override fun onFailure(call: Call<recipie>, t: Throwable) {
+            override fun onFailure(call: Call<List<Recipe>>, t: Throwable) {
                 // Handle network errors
+                Log.e("MealActivity", "Error fetching breakfast recipes", t)
             }
         })
-        }
+
+        service.getRecipes("lunch").enqueue(object : Callback<List<Recipe>> {
+            override fun onResponse(call: Call<List<Recipe>>, response: Response<List<Recipe>>) {
+                handleResponse(response, recyclerViewLunch)
+            }
+
+            override fun onFailure(call: Call<List<Recipe>>, t: Throwable) {
+                // Handle network errors
+                Log.e("MealActivity", "Error fetching lunch recipes", t)
+            }
+        })
+
+        service.getRecipes("dinner").enqueue(object : Callback<List<Recipe>> {
+            override fun onResponse(call: Call<List<Recipe>>, response: Response<List<Recipe>>) {
+                handleResponse(response, recyclerViewDinner)
+            }
+
+            override fun onFailure(call: Call<List<Recipe>>, t: Throwable) {
+                // Handle network errors
+                Log.e("MealActivity", "Error fetching dinner recipes", t)
+            }
+        })
     }
 
+    private fun handleResponse(response: Response<List<Recipe>>, recyclerView: RecyclerView) {
+        loaderAnimationView.visibility = View.GONE
+        if (response.isSuccessful) {
+            val recipes = response.body()
+            if (recipes != null) {
+                val adapter = RecipeAdapter(ArrayList(recipes))
+                recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+                recyclerView.adapter = adapter
+            } else {
+                Log.d("MealActivity", "No recipes received")
+            }
+        } else {
+            Log.d("MealActivity", "Failed to fetch recipes: ${response.code()}")
+        }
+    }
+}
