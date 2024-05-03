@@ -3,43 +3,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Back button -->
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/back"
+        android:textColor="@color/black" />
+
     <!-- Container for days and meals -->
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/backBtn"
         android:padding="16dp">
-
-        <!-- Table header -->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Day"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:padding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Meal"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:padding="8dp"/>
-
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Ready In Minutes"-->
-<!--                android:textColor="@android:color/white"-->
-<!--                android:textStyle="bold"-->
-<!--                android:padding="8dp"/>-->
-        </TableRow>
 
         <!-- RecyclerView for meals -->
 
@@ -58,18 +41,5 @@
             android:background="@android:color/black"
             android:layout_marginTop="8dp"/>
     </TableLayout>
-
-    <!-- Back button -->
-    <Button
-        android:id="@+id/backBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/yellow"
-        android:text="@string/back"
-        android:textColor="@color/black" />
 
 </RelativeLayout>
