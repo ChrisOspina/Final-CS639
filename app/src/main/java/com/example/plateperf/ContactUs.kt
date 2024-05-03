@@ -1,10 +1,13 @@
 package com.example.plateperf
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +37,32 @@ class ContactUs : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contact_us, container, false)
+        val view = inflater.inflate(R.layout.fragment_contact_us, container, false)
+
+        val sendto = view.findViewById<EditText>(R.id.editTextEmail)
+        val body = view.findViewById<EditText>(R.id.editTextMessage)
+        val button = view.findViewById<Button>(R.id.sendEmailButton)
+
+        // attach setOnClickListener to button with Intent object define in it
+        button.setOnClickListener {
+            val emailsend = sendto.getText().toString()
+            val emailbody = body.getText().toString()
+
+            // define Intent object with action attribute as ACTION_SEND
+            val intent = Intent(Intent.ACTION_SEND)
+
+            // add three fields to intent using putExtra function
+            intent.putExtra(Intent.EXTRA_EMAIL, arrayOf(emailsend))
+            intent.putExtra(Intent.EXTRA_TEXT, emailbody)
+
+            // set type of intent
+            intent.type = "message/rfc822"
+
+            // startActivity with intent with chooser as Email client using createChooser function
+            startActivity(Intent.createChooser(intent, "Choose an Email client :"))
+        }
+
+        return view
     }
 
     companion object {
