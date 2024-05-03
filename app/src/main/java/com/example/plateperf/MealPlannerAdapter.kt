@@ -50,7 +50,7 @@ class MealPlannerAdapter(private var days: MutableList<Day>) : RecyclerView.Adap
             readyInMinutesTextView.text = meal.readyInMinutes.toString()
 
             mealRow.addView(mealNameTextView)
-            mealRow.addView(readyInMinutesTextView)
+//            mealRow.addView(readyInMinutesTextView)
 
             holder.mealTableLayout.addView(mealRow)
         }
