@@ -1,0 +1,13 @@
+<!--border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Green border -->
+    <stroke
+        android:width="2dp"
+        android:color="#00FF00" /> <!-- Green color, you can adjust this as needed -->
+
+    <!-- No fill -->
+    <solid android:color="@android:color/transparent" />
+
+</shape>
