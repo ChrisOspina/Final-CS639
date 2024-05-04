@@ -22,6 +22,11 @@ POFILE: View user details
 
 CONTACT US: Send an email to the team
 
+<h2>Preview</h2>
+</br>
+
+<a href="#"><img src="assets/Preview.png" align="left" /></a>
+
 <h2>Link to Presentation</h2>
 Please refer to the link to watch the video <a href="https://docs.google.com/presentation/d/1lNT--YTEpbHwkaYkdSoyn6-U8Dqp6lNT/edit?usp=sharing&ouid=112087055757618843227&rtpof=true&sd=true">Presentation</a>
 <br/>
