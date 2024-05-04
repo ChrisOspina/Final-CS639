@@ -1,44 +1,34 @@
 # Plate Perfect
 
-An android app designed to give users the ability to make well-informed decisions about their health and well-being by providing a wide range of features that are customized to accommodate various dietary preferences and lifestyles like suggesting users with different meal plans and recipes and helps the users to be on track with their diet.
+Plate Perfect is an Android app designed to empower users to make well-informed decisions about their health and well-being. With a wide range of customizable features, it accommodates various dietary preferences and lifestyles, suggesting different meal plans and recipes to help users stay on track with their diet.
 
-<br/>
+## Idea Proposal
+For more details, please refer to the [Idea Proposal](https://docs.google.com/document/d/1WH4igLCGn2JayA3ci811kjBUjbGURqBT/edit?usp=sharing&ouid=102167781560686034577&rtpof=true&sd=true).
 
-<h2>Idea Proposal</h2>
-Please refer to the link for more details <a href="https://docs.google.com/document/d/1WH4igLCGn2JayA3ci811kjBUjbGURqBT/edit?usp=sharing&ouid=102167781560686034577&rtpof=true&sd=true">Idea Proposal</a>
+## Design
+Explore the app's design on [Figma](https://www.figma.com/file/WaHtcOq8zx3GQMmXaezbxi/Plate-Perfect-Design?type=whiteboard&node-id=0-1&t=BbGVux2QRRN0fjTZ-0).
 
-<h2>Design</h2>
-Please refer to the link for more details <a href="https://www.figma.com/file/WaHtcOq8zx3GQMmXaezbxi/Plate-Perfect-Design?type=whiteboard&node-id=0-1&t=BbGVux2QRRN0fjTZ-0">Design</a>
-<br/>
+## Features
+- **Safe Eats:** Filter recipes to accommodate allergies.
+- **Meal Plans:** Weekly proposed meal plans, including three meals a day.
+- **Meal Time Notification:** Scheduled reminders for meals.
+- **Profile:** View user details.
+- **Contact Us:** Send an email to the team.
 
-<h2>Features</h2>
-SAFE EATS : An option to view recipies by filtering out any allergies from a provided list
+## Preview
+![Preview](assets/Preview.png)
 
-MEAL PLANS: A proposed meal plan for the entire week, includes 3 meals a day
+## Link to Presentation
+Watch the video presentation [here](https://docs.google.com/presentation/d/1lNT--YTEpbHwkaYkdSoyn6-U8Dqp6lNT/edit?usp=sharing&ouid=112087055757618843227&rtpof=true&sd=true).
 
-MEAL TIME NOTIFICATION: Scheduled notifications for meal reminders
+## Link to Demo Video on YouTube
+Watch the demo video on [YouTube](https://youtu.be/9klUhgNN0cE).
 
-POFILE: View user details
-
-CONTACT US: Send an email to the team
-
-<h2>Preview</h2>
-</br>
-
-<a href="#"><img src="assets/Preview.png" align="left" /></a>
-
-<h2>Link to Presentation</h2>
-Please refer to the link to watch the video <a href="https://docs.google.com/presentation/d/1lNT--YTEpbHwkaYkdSoyn6-U8Dqp6lNT/edit?usp=sharing&ouid=112087055757618843227&rtpof=true&sd=true">Presentation</a>
-<br/>
-
-<h2>Link to Demo Video on YouTube</h2>
-Please refer to the link to watch the video <a href="https://youtu.be/9klUhgNN0cE">Video</a>
-
-<br/>
-
-<h2>Contributors:</h2>
-Christoper Ospina, Sharon Dsouza, Gracia Betty and Saily Jadhav
-<br/>
+## Contributors
+- Christoper Ospina
+- Sharon Dsouza
+- Gracia Betty
+- Saily Jadhav
 
 <a href="#"><img src="assets/Chris.jpeg" align="left" height="170px" width="170px" /></a>
 
