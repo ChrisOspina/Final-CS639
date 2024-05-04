@@ -49,7 +49,7 @@ class AllergyList : AppCompatActivity() {
         Log.e("allergy filter", allergyFilter)
 
         // Make API call and enqueue it to execute asynchronously
-        val call = service.getAllergy("1b2c5dfeedce452ea254ea6b66ba41dd", allergyFilter)
+        val call = service.getAllergy("1883dce1113c4fdca503a77c0dad69c7", allergyFilter)
 
         call.enqueue(object : retrofit2.Callback<allergy> {
             override fun onResponse(call: Call<allergy>, response: retrofit2.Response<allergy>) {

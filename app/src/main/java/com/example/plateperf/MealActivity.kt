@@ -57,7 +57,7 @@ class MealActivity : AppCompatActivity() {
         val service = retrofit.create(AppService::class.java)
 
         // Make API call and enqueue it to execute asynchronously
-        val call = service.getRecipes("1b2c5dfeedce452ea254ea6b66ba41dd")
+        val call = service.getRecipes("1883dce1113c4fdca503a77c0dad69c7")
 
 
         call.enqueue(object : retrofit2.Callback<recipie> {
