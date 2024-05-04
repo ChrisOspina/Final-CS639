@@ -61,13 +61,13 @@
     <string name="notification_title">Title</string>
     <string name="notification_message">Message</string>
     <string name="schedule_notification_button_display">Schedule Notification</string>
-    <string name="name_placeholder">John Doe</string>
-    <string name="age_placeholder">25</string>
-    <string name="birthday_placeholder">05/28/1999</string>
-    <string name="height_placeholder">130 cm</string>
-    <string name="weight_placeholder">150 lb</string>
-    <string name="email_placeholder">johndoe@gmail.com</string>
-    <string name="phone_number_placeholder">555-555-5555</string>
+    <string name="name_placeholder">Name : John Doe</string>
+    <string name="age_placeholder">Age : 25</string>
+    <string name="birthday_placeholder">Birthday : 05/28/1999</string>
+    <string name="height_placeholder">Height : 130 cm</string>
+    <string name="weight_placeholder">Weight : 150 lb</string>
+    <string name="email_placeholder">Email : johndoe@gmail.com</string>
+    <string name="phone_number_placeholder">Phone : 555-555-5555</string>
     <string name="profile_details">Profile Details</string>
 
     <!--    Allergy -->

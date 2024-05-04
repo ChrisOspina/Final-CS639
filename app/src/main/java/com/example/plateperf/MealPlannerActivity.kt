@@ -49,7 +49,7 @@ class MealPlannerActivity : AppCompatActivity() {
         val service = retrofit.create(AppService::class.java)
 
         // Make API call and enqueue it to execute asynchronously
-        val apiKey = "1b2c5dfeedce452ea254ea6b66ba41dd"
+        val apiKey = "1883dce1113c4fdca503a77c0dad69c7"
         val call = service.getMealPlan(apiKey)
 
         call.enqueue(object : Callback<MealPlanResponse> {
