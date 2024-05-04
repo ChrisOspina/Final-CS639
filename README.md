@@ -22,6 +22,10 @@ POFILE: View user details
 
 CONTACT US: Send an email to the team
 
+<h2>Link to Demo Video on YouTube</h2>
+Please refer to the link to watch the video <a href="https://youtu.be/9klUhgNN0cE">Video</a>
+<br/>
+
 <br/>
 
 <h2>Contributors:</h2>
