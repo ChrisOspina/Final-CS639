@@ -19,7 +19,7 @@ Explore the app's design on [Figma](https://www.figma.com/file/WaHtcOq8zx3GQMmXa
 ![Preview](assets/Preview.png)
 
 ## Link to Presentation
-Watch the video presentation [here](https://docs.google.com/presentation/d/1lNT--YTEpbHwkaYkdSoyn6-U8Dqp6lNT/edit?usp=sharing&ouid=112087055757618843227&rtpof=true&sd=true).
+Have a look at the presentation [here](https://docs.google.com/presentation/d/1lNT--YTEpbHwkaYkdSoyn6-U8Dqp6lNT/edit?usp=sharing&ouid=112087055757618843227&rtpof=true&sd=true).
 
 ## Link to Demo Video on YouTube
 Watch the demo video on [YouTube](https://youtu.be/9klUhgNN0cE).
@@ -37,3 +37,5 @@ Watch the demo video on [YouTube](https://youtu.be/9klUhgNN0cE).
 <a href="#"><img src="assets/Gracia.jpg" align="left" height="170px" width="170px" /></a>
 
 <a href="#"><img src="assets/Saily.jpeg" align="left" height="170px" width="170px" /></a>
+
+
