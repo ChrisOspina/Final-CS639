@@ -10,6 +10,10 @@ Please refer to the link for more details <a href="https://docs.google.com/docum
 <h2>Design</h2>
 Please refer to the link for more details <a href="https://www.figma.com/file/WaHtcOq8zx3GQMmXaezbxi/Plate-Perfect-Design?type=whiteboard&node-id=0-1&t=BbGVux2QRRN0fjTZ-0">Design</a>
 
+<h2>Link to Demo Video on YouTube</h2>
+Please refer to the link to watch the video <a href="https://youtu.be/9klUhgNN0cE">Video</a>
+<br/>
+
 <br/>
 
 <h2>Contributors:</h2>
