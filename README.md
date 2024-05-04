@@ -9,6 +9,18 @@ Please refer to the link for more details <a href="https://docs.google.com/docum
 
 <h2>Design</h2>
 Please refer to the link for more details <a href="https://www.figma.com/file/WaHtcOq8zx3GQMmXaezbxi/Plate-Perfect-Design?type=whiteboard&node-id=0-1&t=BbGVux2QRRN0fjTZ-0">Design</a>
+<br/>
+
+<h2>Features</h2>
+SAFE EATS : An option to view recipies by filtering out any allergies from a provided list
+
+MEAL PLANS: A proposed meal plan for the entire week, includes 3 meals a day
+
+MEAL TIME NOTIFICATION: Scheduled notifications for meal reminders
+
+POFILE: View user details
+
+CONTACT US: Send an email to the team
 
 <br/>
 
