@@ -16,29 +16,54 @@
         android:text="@string/back"
         android:textColor="@color/black" />
 
+
     <!-- Container for days and meals -->
-    <TableLayout
-        android:id="@+id/tableLayout"
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Plan for the Week"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/backBtn"
-        android:padding="16dp">
+        android:layout_marginTop="8dp">
 
-        <!-- RecyclerView for meals -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/mealsRecyclerView"
+
+        <TableLayout
+            android:id="@+id/tableLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="8dp"/>
+            android:layout_below="@id/backBtn"
+            android:padding="16dp">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/black"
-            android:layout_marginTop="8dp"/>
-    </TableLayout>
+            <!-- RecyclerView for meals -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mealsRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                android:layout_marginTop="8dp"/>
+        </TableLayout>
+    </HorizontalScrollView>
 
 </RelativeLayout>
