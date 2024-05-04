@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_light_alt2"
+    tools:context=".AllergyOption">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="@string/allergy_description" />
+
+<!--    Dairy -->
+    <Button
+        android:id="@+id/dairyButton"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/dairy_button"
+        android:textColor="@color/black" />
+
+<!--    Egg -->
+    <Button
+        android:id="@+id/eggButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/egg_button"
+        android:textColor="@color/black" />
+
+    <!--    Gluten -->
+    <Button
+        android:id="@+id/glutenButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/gluten_button"
+        android:textColor="@color/black" />
+
+    <!--    Peanut  -->
+    <Button
+        android:id="@+id/peanutButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/peanut_button"
+        android:textColor="@color/black" />
+
+    <!--    Shellfish  -->
+    <Button
+        android:id="@+id/shellfishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/shellfish_button"
+        android:textColor="@color/black" />
+
+    <!--    Soy  -->
+    <Button
+        android:id="@+id/soyButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/soy_button"
+        android:textColor="@color/black" />
+
+    <!--    Grain  -->
+    <Button
+        android:id="@+id/grainButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/grain_button"
+        android:textColor="@color/black" />
+
+    <!--    Sesame  -->
+    <Button
+        android:id="@+id/sesameButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/sesame_button"
+        android:textColor="@color/black" />
+
+</LinearLayout>
+</FrameLayout>

@@ -70,4 +70,16 @@
     <string name="phone_number_placeholder">555-555-5555</string>
     <string name="profile_details">Profile Details</string>
 
+    <!--    Allergy -->
+    <string name="allergy_display">Allergy</string>
+    <string name="allergy_description">See recipes that don\'t contain:</string>
+    <string name="dairy_button">Dairy</string>
+    <string name="egg_button">Egg</string>
+    <string name="gluten_button">Gluten</string>
+    <string name="peanut_button">Peanut</string>
+    <string name="shellfish_button">Shellfish</string>
+    <string name="soy_button">Soy</string>
+    <string name="grain_button">Grain</string>
+    <string name="sesame_button">Sesame</string>
+
 </resources>
